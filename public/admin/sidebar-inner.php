@@ -1,6 +1,8 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']);
 $employee_pages = ['list.php', 'add.php', 'edit.php', 'view.php'];
+
+$leaves_pages = ['leave_list.php','leave_types.php'];
 ?>
 
 <div class="menu-nav">
@@ -22,8 +24,8 @@ $employee_pages = ['list.php', 'add.php', 'edit.php', 'view.php'];
         </a>
     </p>
 
-    <p class="<?php echo ($current_page == 'leaves.php') ? 'menu-active' : ''; ?>">
-        <a href="leaves.php" class="menu-item">
+    <p class="<?php echo (in_array($current_page, $leaves_pages)) ? 'menu-active' : ''; ?>">
+        <a href="../leaves/leave_list.php" class="menu-item">
             <i class="fa-solid fa-calendar-check"></i> Leaves
         </a>
     </p>

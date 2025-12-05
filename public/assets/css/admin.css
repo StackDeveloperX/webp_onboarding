@@ -159,3 +159,10 @@ a.menu-item {
     background: #163A39;
     padding: 10px 0;
 }
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: #163A39;
+    border-color: #163A39;
+}
