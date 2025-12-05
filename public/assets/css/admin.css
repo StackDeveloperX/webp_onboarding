@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body{
+    background: #F3F4EF;
+}
+
+.leftside-container{
+    padding: 0;
+}
+
+.menu-nav {
+    padding-right: 40px;
+}
+
+.menu-nav p{
+    margin-bottom: 0px;
+    line-height: 4em;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: #4b4b4b;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.menu-active a{
+    color: #FFFFFF;
+}
+
+p.menu-active {
+    background: #0E3A39;
+    border-radius: 0px 20px 20px 0px;
+}
+
+a.menu-item {
+    margin-left: 31%;
+}
+
+.rightside-container{
+    padding: 20px;
+}
+
+.card{
+    border: none;
+    border-radius: 20px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.user-text{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.user-text img{
+    width: 40px;
+    padding-right: 10px;
+}
+
+.grey-card{
+    background: #F3F4EF;
+    border-radius: 10px;
+}
+
+.grey-card i{
+    font-size: 60px;
+    color:#163A39
+}
+
+.grey-card h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.numbers-card h1{
+    font-size: 110px;
+    font-weight: 800;
+    opacity: 0.5;
+    color: #163A39;
+}
+
+.green-card{
+    background: #163A39;
+    border-radius: 10px;
+}
+
+.green-card i{
+    font-size: 60px;
+    color:#FFFFFF;
+}
+
+.green-card h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    color:#FFFFFF;
+}
+
+.numbers-cards h1{
+    font-size: 110px;
+    font-weight: 800;
+    opacity: 0.5;
+    color: #FFFFFF;
+}
+
+.icon-numbers {
+    margin-top: 22px;
+}
+
+.employee-text{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-green, .btn-green:hover{
+    background: #0E3A39;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.card-height{
+    min-height: 95vh;
+}
+
+.btn-green-sm, .btn-green-sm:hover{
+    background: #0E3A39;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 4px 10px;
+}
+
+.details-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.details-link{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+#editEmployeeForm h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #163A39;
+    padding: 10px 0;
+}
