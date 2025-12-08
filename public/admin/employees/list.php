@@ -54,7 +54,7 @@ require_once '../../../app/config/database.php';
 
                             <div class="row mt-4">
                                 <div class="col-sm-12">
-                                    <table id="employee-table" class="table table-bordered table-striped">
+                                    <table id="employee-table" class="table table-bordered table-sm table-striped" style="width: 100%;">
                                         <thead>
                                             <tr>
                                                 <th>Emp Code</th>
@@ -100,18 +100,19 @@ require_once '../../../app/config/database.php';
         </div>
     </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-
-<script>
-    new DataTable('#employee-table', {
-        responsive: true,
-        pageLength: 5,
-        lengthMenu: [5, 10, 25, 50, 100]
-    });
-</script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        new DataTable('#employee-table', {
+            responsive: true,
+            scrollX: true,
+            pageLength: 5,
+            lengthMenu: [5, 10, 25, 50, 100],
+        });
+    </script>
+    </body>
 </html>

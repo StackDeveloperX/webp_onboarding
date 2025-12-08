@@ -56,12 +56,14 @@ $requests = $stmt->fetchAll();
                                     <h2 class="employee-text">Leave Reqests</h2>
                                 </div>
                                 <div class="col-sm-4"></div>
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4 text-end">
+                                    <a href="leave_types.php" class="btn btn-green"><i class="fa-solid fa-plus"></i> Add Leave Types</a>
+                                </div>
                             </div>
 
                             <div class="row mt-4">
                                 <div class="col-sm-12">
-                                    <table id="employee-table" class="table table-bordered table-sm table-striped">
+                                    <table id="employee-table" class="table table-bordered table-sm table-striped table-responsive">
                                         <thead>
                                             <tr>
                                                 <th>Employee</th>
@@ -113,7 +115,8 @@ $requests = $stmt->fetchAll();
     new DataTable('#employee-table', {
         responsive: true,
         pageLength: 5,
-        lengthMenu: [5, 10, 25, 50, 100]
+        lengthMenu: [5, 10, 25, 50, 100],
+        responsive: true
     });
 </script>
 </body>

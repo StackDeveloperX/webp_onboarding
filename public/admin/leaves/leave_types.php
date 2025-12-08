@@ -50,7 +50,9 @@ $types = $pdo->query("SELECT * FROM leave_types ORDER BY id DESC")->fetchAll();
                                     <h2 class="employee-text">Leave Types</h2>
                                 </div>
                                 <div class="col-sm-4"></div>
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4 text-end">
+                                    <a href="leave_list.php" class="btn btn-green"><i class="fa-solid fa-plus"></i> View Leave Requests</a>
+                                </div>
                             </div>
 
                             <div class="row mt-4">

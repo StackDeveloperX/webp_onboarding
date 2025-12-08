@@ -22,12 +22,20 @@ requireAdmin();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2 leftside-container">
+                    <div class="close-sidebar d-lg-none" id="closeSidebar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
                     <div class="pt-5 text-center">
                         <img src="../assets/images/user.png" alt="">
                         <h5 class="mt-3"><?php echo htmlspecialchars($_SESSION['name']); ?></h5>
                         <p class="text-muted text-uppercase"><?php echo htmlspecialchars($_SESSION['role']); ?></p>
                     </div>
+
                     <?php include 'sidebar.php'; ?>
+                </div>
+                <div class="mobile-menu-icon d-lg-none d-md-block" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="col-sm-10 rightside-container">
                     <div class="card shadow card-height">
@@ -94,5 +102,14 @@ requireAdmin();
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            document.querySelector('.leftside-container').classList.add('active');
+        });
+
+        document.getElementById('closeSidebar').addEventListener('click', function () {
+            document.querySelector('.leftside-container').classList.remove('active');
+        });
+    </script>
     </body>
 </html>
