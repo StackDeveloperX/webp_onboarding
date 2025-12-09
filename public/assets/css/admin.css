@@ -172,33 +172,6 @@ a.menu-item {
     transition: transform 0.3s ease;
 }
 
-/* Hide sidebar by default on <= 1024px */
-@media (max-width: 1024px) {
-    .leftside-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100vh;
-        background: #fff;
-        z-index: 9999;
-        transform: translateX(-100%); /* hidden */
-        box-shadow: 3px 0 10px rgba(0,0,0,0.2);
-    }
-
-    /* When active class added */
-    .leftside-container.active {
-        transform: translateX(0);
-    }
-
-
-    /* Push right content slightly down to avoid overlapping */
-    .rightside-container {
-        margin-top: -68px;
-        width: 100%;
-    }
-}
-
 /* Hide hamburger on desktops */
 @media (min-width: 1025px) {
     .mobile-menu-icon {
@@ -235,6 +208,11 @@ a.menu-item {
         transform: translateX(0);
     }
 
+    .rightside-container {
+        margin-top: -68px;
+        width: 100%;
+    }
+
     /* Show cross only on mobile/tablet */
     .close-sidebar {
         display: block !important;
@@ -247,11 +225,43 @@ a.menu-item {
         padding-left: 50px;
         margin-top: 19px;
         z-index: 9;
+        width: 13%;
+    }
+
+    .tab-mob-50w{
+        width: 50%;
+    }
+
+    .tab-mob-100w{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tab-mob-100wd{
+        width: 100%;
+    }
+
+    .grey-card h3{
+        font-size: 19px;
+    }
+
+    .disp-none{
+        display: none;
     }
 }
 
-@media (min-width: 1025px) {
-    .mobile-menu-icon {
-        display: none;
+
+@media screen and (max-width:600px) {
+    .step-nav .nav-item {
+        width: 100% !important;
+    }
+
+    .mob{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mob-margin {
+        margin-top: -77px;
     }
 }

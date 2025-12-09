@@ -26,13 +26,15 @@ requireAdmin();
                         <i class="fa-solid fa-xmark"></i>
                     </div>
 
-                    <div class="pt-5 text-center">
-                        <img src="../assets/images/user.png" alt="">
-                        <h5 class="mt-3"><?php echo htmlspecialchars($_SESSION['name']); ?></h5>
-                        <p class="text-muted text-uppercase"><?php echo htmlspecialchars($_SESSION['role']); ?></p>
-                    </div>
+                    <div class="mob-margin">
+                        <div class="pt-5 text-center">
+                            <img src="../assets/images/user.png" alt="">
+                            <h5 class="mt-3"><?php echo htmlspecialchars($_SESSION['name']); ?></h5>
+                            <p class="text-muted text-uppercase"><?php echo htmlspecialchars($_SESSION['role']); ?></p>
+                        </div>
 
-                    <?php include 'sidebar.php'; ?>
+                        <?php include 'sidebar.php'; ?>
+                    </div>
                 </div>
                 <div class="mobile-menu-icon d-lg-none d-md-block" id="menuToggle">
                     <i class="fa-solid fa-bars"></i>
@@ -43,13 +45,13 @@ requireAdmin();
                             <div class="row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 tab-mob-100wd">
                                     <h6 class="user-text text-end"><img src="../assets/images/user.png" alt=""> Welcome, <?php echo htmlspecialchars($_SESSION['name']); ?></h6>
                                 </div>
                             </div>
 
                             <div class="row mt-3">
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 tab-mob-50w mob">
                                     <div class="card shadow grey-card">
                                         <div class="card-body">
                                             <div class="row">
@@ -64,22 +66,7 @@ requireAdmin();
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="card shadow grey-card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-sm-8 icon-numbers">
-                                                    <i class="fa-solid fa-calendar-check"></i>
-                                                    <h3>Employees on Leave</h3>
-                                                </div>
-                                                <div class="col-sm-4 numbers-card">
-                                                    <h1>0</h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 tab-mob-50w">
                                     <div class="card shadow green-card">
                                         <div class="card-body">
                                             <div class="row">
@@ -93,6 +80,9 @@ requireAdmin();
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-sm-4">
+                                            
                                 </div>
                             </div>
                         </div>

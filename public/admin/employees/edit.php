@@ -39,12 +39,19 @@ if (!$emp) { die("Employee not found."); }
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2 leftside-container">
+                    <div class="close-sidebar d-lg-none" id="closeSidebar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
                     <div class="pt-5 text-center">
                         <img src="../../assets/images/user.png" alt="">
                         <h5 class="mt-3"><?php echo htmlspecialchars($_SESSION['name']); ?></h5>
                         <p class="text-muted text-uppercase"><?php echo htmlspecialchars($_SESSION['role']); ?></p>
                     </div>
                     <?php include '../sidebar-inner.php'; ?>
+                </div>
+                <div class="mobile-menu-icon d-lg-none d-md-block" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="col-sm-10 rightside-container">
                     <div class="card shadow card-height">
@@ -246,6 +253,16 @@ if (!$emp) { die("Employee not found."); }
                     });
                 }
             });
+        });
+    </script>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            document.querySelector('.leftside-container').classList.add('active');
+        });
+
+        document.getElementById('closeSidebar').addEventListener('click', function () {
+            document.querySelector('.leftside-container').classList.remove('active');
         });
     </script>
 </body>
